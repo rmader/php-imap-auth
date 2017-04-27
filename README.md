@@ -21,3 +21,8 @@ location /imap-login.php {
 }
 error_page 401 /imap-login.php;
 ```
+
+Note: I recommend to combine this with request-limiting or automatic ip banning:
+
+http://nginx.org/en/docs/http/ngx_http_limit_req_module.html
+http://www.fail2ban.org/wiki/index.php/Main_Page
